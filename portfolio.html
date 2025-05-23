@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例展示 - 妙极品牌设计工作室</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background-color: #0a0a0a;
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .page-header p {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .portfolio-showcase {
+            padding: 20px 0 100px;
+            background-color: #0a0a0a;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 10px;
+        }
+        
+        .portfolio-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 300px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s ease;
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .view-details {
+            color: white;
+            background: rgba(102, 102, 102, 0.5);
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .portfolio-item:hover .view-details {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .view-details:hover {
+            background: rgba(102, 102, 102, 0.8);
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 1024px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .portfolio-item {
+                height: 250px;
+            }
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: none;
+        }
+        
+        .footer-content {
+            display: none;
+        }
+        
+        footer {
+            background-color: #0a0a0a !important; /* 确保页脚为黑色 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="妙极品牌设计工作室" class="logo-img">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="portfolio.html">案例展示</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in-up">案例展示</h1>
+            <p class="fade-in-up">探索我们的设计作品，感受创意的无限可能</p>
+        </div>
+    </section>
+
+    <section class="portfolio-showcase">
+        <div class="container">
+            <div class="portfolio-grid" style="margin-top: -38px;">
+                <div class="portfolio-item">
+                    <img src="images/portfolio-1.jpg" alt="中式餐厅品牌设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-1.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-2.jpg" alt="科技公司品牌形象">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-2.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-3.jpg" alt="时尚服装品牌设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-3.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-4.jpg" alt="教育机构品牌设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-4.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-5.jpg" alt="咖啡品牌设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-5.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-6.jpg" alt="健康产品包装设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-6.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-7.jpg" alt="教育品牌形象设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-7.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-8.jpg" alt="咖啡品牌设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-8.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-9.jpg" alt="健康食品包装设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-9.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-10.jpg" alt="化妆品包装设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-10.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-11.jpg" alt="酒店品牌设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-11.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="images/portfolio-12.jpg" alt="书籍装帧设计">
+                    <div class="portfolio-overlay">
+                        <a href="portfolio-detail-12.html" class="view-details">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2023 妙极品牌设计工作室. 版权所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // 移动端菜单
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 

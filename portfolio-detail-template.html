@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例标题 - 妙极品牌设计工作室</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 案例详情页特定样式 */
+        .portfolio-detail {
+            padding: 150px 0;
+            background-color: #0a0a0a;
+        }
+        
+        .portfolio-header {
+            margin-bottom: 70px;
+            text-align: center;
+        }
+        
+        .portfolio-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .portfolio-description {
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 800px;
+            margin: 0 auto 80px;
+            line-height: 1.8;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .portfolio-images {
+            margin-bottom: 80px;
+        }
+        
+        .portfolio-image-item {
+            margin-bottom: 50px;
+        }
+        
+        .portfolio-image-item img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .next-prev {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .next-prev a {
+            display: flex;
+            align-items: center;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .next-prev a:hover {
+            color: var(--primary-color);
+        }
+        
+        .next-prev .prev i {
+            margin-right: 10px;
+        }
+        
+        .next-prev .next i {
+            margin-left: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .portfolio-header h1 {
+                font-size: 2rem;
+                padding: 15px 0;
+            }
+            
+            .portfolio-description {
+                padding: 0 20px 15px;
+                margin-bottom: 60px;
+            }
+            
+            .portfolio-image-item {
+                margin-bottom: 40px;
+            }
+        }
+        
+        footer {
+            background-color: #0a0a0a !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="妙极品牌设计工作室" class="logo-img">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="portfolio.html">案例展示</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="portfolio-detail">
+        <div class="container">
+            <div class="portfolio-header">
+                <h1>案例标题 - 在这里输入您的案例标题</h1>
+            </div>
+            
+            <p class="portfolio-description">
+                在这里输入您的案例简介和描述。详细说明项目背景、设计理念、解决方案以及成果。这部分文字建议在100-300字之间，能够清晰地概括项目的主要内容和价值。
+            </p>
+            
+            <div class="portfolio-images">
+                <!-- 图片1 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片1.jpg" alt="案例图片描述1">
+                </div>
+                
+                <!-- 图片2 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片2.jpg" alt="案例图片描述2">
+                </div>
+                
+                <!-- 图片3 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片3.jpg" alt="案例图片描述3">
+                </div>
+                
+                <!-- 图片4 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片4.jpg" alt="案例图片描述4">
+                </div>
+                
+                <!-- 图片5 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片5.jpg" alt="案例图片描述5">
+                </div>
+                
+                <!-- 图片6 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片6.jpg" alt="案例图片描述6">
+                </div>
+                
+                <!-- 图片7 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片7.jpg" alt="案例图片描述7">
+                </div>
+                
+                <!-- 图片8 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片8.jpg" alt="案例图片描述8">
+                </div>
+                
+                <!-- 图片9 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片9.jpg" alt="案例图片描述9">
+                </div>
+                
+                <!-- 图片10 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片10.jpg" alt="案例图片描述10">
+                </div>
+                
+                <!-- 图片11 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片11.jpg" alt="案例图片描述11">
+                </div>
+                
+                <!-- 图片12 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片12.jpg" alt="案例图片描述12">
+                </div>
+                
+                <!-- 图片13 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片13.jpg" alt="案例图片描述13">
+                </div>
+                
+                <!-- 图片14 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片14.jpg" alt="案例图片描述14">
+                </div>
+                
+                <!-- 图片15 -->
+                <div class="portfolio-image-item">
+                    <img src="images/案例文件夹/图片15.jpg" alt="案例图片描述15">
+                </div>
+            </div>
+            
+            <div class="next-prev">
+                <a href="portfolio-detail-前一个序号.html" class="prev"><i class="fas fa-arrow-left"></i> 上一个案例</a>
+                <a href="portfolio.html">返回所有案例</a>
+                <a href="portfolio-detail-后一个序号.html" class="next">下一个案例 <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>妙极品牌设计工作室</h3>
+                    <p>专注品牌设计与形象塑造，为企业提供全方位品牌升级服务</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 中国上海市某某区某某路123号</p>
+                    <p><i class="fas fa-phone"></i> +86 123 4567 8910</p>
+                    <p><i class="fas fa-envelope"></i> contact@miaoji.design</p>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="portfolio.html">案例展示</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>关注我们</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 妙极品牌设计工作室. 版权所有.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        
+        // 移动端菜单
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
+</body>
+</html> 
